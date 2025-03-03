@@ -12,7 +12,7 @@
         }
     </style>
   </head>
-<body>
+  <body>
     <div id="quoteDisplay">Click the button for a motivational quote!</div>
     <button id="quoteButton">Get Quote</button>
 
@@ -30,6 +30,46 @@
             document.getElementById('quoteDisplay').textContent = randomQuote;
         });
     </script>
-</body>
+  </body>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .box {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 10px 0;
+            text-align: center;
+        }
+        @media (min-width: 600px) {
+            .container {
+                display: flex;
+                justify-content: space-between;
+            }
+            .box {
+                width: 30%;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+  </body>
 </html>
 
