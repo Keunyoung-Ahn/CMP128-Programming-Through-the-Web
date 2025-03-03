@@ -4,4 +4,6 @@ body{
 }
 #myButton{
   color: black;
+  min-height: 100px;
+  min-width: 300px;
 }
